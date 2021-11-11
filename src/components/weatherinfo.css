@@ -1,0 +1,63 @@
+.weatherinfo-container{
+  padding-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+.desc{
+  text-align: left;
+}
+
+.displayicon{
+  position: relative;
+  font-size: 60px;
+}
+
+.displaylocation{
+  font-size: 18px;
+  margin: 0 auto;
+  text-align: left;
+  padding-bottom: 5px;  
+}
+
+.displaydate,
+.displaydesc,
+.displaywind,
+.displayhumidity {
+  font-size: 12px;
+}
+
+.displaytemp{
+  font-size: 100px;
+  position: relative;
+  left: 20px;
+}
+
+.buttons{
+  border: 1px #eee solid;
+  width: 40px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  position: relative;
+  left: -30px;
+  border-radius: 0.25rem;
+}
+
+.convertC{
+  margin-top: 40px;
+}
+
+.displayicon:hover,
+.displaytemp:hover{
+  color: #9055A2;
+}
+
+.buttons:hover{
+  border: 1px #9055A2 solid;
+}
+ 

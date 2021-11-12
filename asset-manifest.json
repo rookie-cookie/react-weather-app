@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/rookie-cookie/react-weather-app/static/css/main.9d708cb5.chunk.css",
+    "main.js": "/rookie-cookie/react-weather-app/static/js/main.289eb42f.chunk.js",
+    "main.js.map": "/rookie-cookie/react-weather-app/static/js/main.289eb42f.chunk.js.map",
+    "runtime-main.js": "/rookie-cookie/react-weather-app/static/js/runtime-main.1b7f8e8c.js",
+    "runtime-main.js.map": "/rookie-cookie/react-weather-app/static/js/runtime-main.1b7f8e8c.js.map",
+    "static/css/2.a75f5a2c.chunk.css": "/rookie-cookie/react-weather-app/static/css/2.a75f5a2c.chunk.css",
+    "static/js/2.41c1a44c.chunk.js": "/rookie-cookie/react-weather-app/static/js/2.41c1a44c.chunk.js",
+    "static/js/2.41c1a44c.chunk.js.map": "/rookie-cookie/react-weather-app/static/js/2.41c1a44c.chunk.js.map",
+    "static/js/3.193505e0.chunk.js": "/rookie-cookie/react-weather-app/static/js/3.193505e0.chunk.js",
+    "static/js/3.193505e0.chunk.js.map": "/rookie-cookie/react-weather-app/static/js/3.193505e0.chunk.js.map",
+    "index.html": "/rookie-cookie/react-weather-app/index.html",
+    "static/css/2.a75f5a2c.chunk.css.map": "/rookie-cookie/react-weather-app/static/css/2.a75f5a2c.chunk.css.map",
+    "static/css/main.9d708cb5.chunk.css.map": "/rookie-cookie/react-weather-app/static/css/main.9d708cb5.chunk.css.map",
+    "static/js/2.41c1a44c.chunk.js.LICENSE.txt": "/rookie-cookie/react-weather-app/static/js/2.41c1a44c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1b7f8e8c.js",
+    "static/css/2.a75f5a2c.chunk.css",
+    "static/js/2.41c1a44c.chunk.js",
+    "static/css/main.9d708cb5.chunk.css",
+    "static/js/main.289eb42f.chunk.js"
+  ]
+}

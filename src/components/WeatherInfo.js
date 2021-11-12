@@ -2,6 +2,7 @@ import React from 'react'
 import './weatherinfo.css'
 import moment from 'moment'
 import WeatherIcon from './WeatherIcon'
+import WeatherConvert from './WeatherConvert'
 
 
 
@@ -31,12 +32,10 @@ export default function WeatherInfo({
 
       <div className="row">
         <div className="col-sm-10">
-          <div className="displaytemp"> {Math.floor(temperature)}&deg;F</div>
+          <div className="displaytemp">{Math.floor(temperature)}&deg;F</div>
         </div>
         <div className="col-sm-2">
-          <div className="buttons convertC">C</div>
-          <div className="buttons convertF">F</div>
-        
+          <WeatherConvert temperature={temperature}/>
         </div>
       </div>
       
@@ -44,7 +43,7 @@ export default function WeatherInfo({
        <p className="displayhumidity">humidity: {humidity} %</p> 
      </div>
      <div className="row">
-        <p className="displaywind" >windspeed: {windspeed} m/s</p>
+        <p className="displaywind">windspeed: {windspeed} m/s</p>
      </div>
 
     </div>

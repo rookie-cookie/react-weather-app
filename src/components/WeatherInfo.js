@@ -1,7 +1,8 @@
 import React from 'react'
 import './weatherinfo.css'
 import moment from 'moment'
-import { WiDaySunny } from 'weather-icons-react'
+import WeatherIcon from './WeatherIcon'
+
 
 
 export default function WeatherInfo({
@@ -13,11 +14,13 @@ export default function WeatherInfo({
   icon
   }) {
 
+
+
   return (
     <div className="weatherinfo-container">
       <div className="row desc">
         <div className="col-sm-3 displayicon">
-          <WiDaySunny size={100} color='#555' />
+           <WeatherIcon icon={icon} />
         </div>
         <div className="col-sm-9">
           <p className="displaylocation">{city}</p>
@@ -33,6 +36,7 @@ export default function WeatherInfo({
         <div className="col-sm-2">
           <div className="buttons convertC">C</div>
           <div className="buttons convertF">F</div>
+        
         </div>
       </div>
       
@@ -42,11 +46,6 @@ export default function WeatherInfo({
      <div className="row">
         <p className="displaywind" >windspeed: {windspeed} m/s</p>
      </div>
-      
-      
-    
-      
-      
 
     </div>
   )

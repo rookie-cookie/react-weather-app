@@ -2,6 +2,7 @@ import React from 'react'
 import './weathercard.css'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import WeatherInfo from './WeatherInfo'
+import WeatherIcon from './WeatherIcon'
 import axios from 'axios'
 import { useEffect, useState } from "react"
 
@@ -58,6 +59,7 @@ export default function WeatherCard(){
             icon={icon}
              
             />
+            
         </div>
         <div className="container ">
           <div className="weather-footer">

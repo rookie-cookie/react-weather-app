@@ -2,6 +2,7 @@ import React from 'react'
 import './weathercard.css'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import WeatherInfo from './WeatherInfo'
+import Loader from './Loader'
 import axios from 'axios'
 import { useEffect, useState } from "react"
 
@@ -16,9 +17,13 @@ export default function WeatherCard(){
    const [windspeed, setWindspeed] = useState(null);
    const [weatherdesc, setWeatherdesc] = useState(null);
    const [icon, setIcon] = useState('');
+   const [loading, setLoading] = useState(true)
   
 
   useEffect(() => {
+
+    setTimeout(() => setLoading(false), 6000)
+
     navigator.geolocation.getCurrentPosition(function (position) {
       setLat(position.coords.latitude);
       setLong(position.coords.longitude);
@@ -42,12 +47,16 @@ export default function WeatherCard(){
 
 
   return (
+
     <div className="wrapper">
+       
         <div className="container weather-body">
           <div className="weather-header">
-            <h3>Weather Report  <FaMapMarkerAlt /></h3>
+            <h3>Local Weather Report  <FaMapMarkerAlt /></h3>
           </div>
-          <WeatherInfo 
+
+          {loading === false ? (
+            <WeatherInfo 
             latitude={latitude}
             longitude={longitude}
             temperature={temperature}
@@ -58,6 +67,10 @@ export default function WeatherCard(){
             icon={icon}
              
             />
+          ): (
+          <Loader />
+      )}
+          
             
         </div>
         <div className="container ">
